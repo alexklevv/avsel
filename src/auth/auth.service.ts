@@ -1,6 +1,6 @@
 import {HttpException, HttpStatus, Injectable, Req} from '@nestjs/common';
 import {CreateUserDto} from "../users/dto/create-user.dto";
-import {User, UserDocument} from "../users/schemas/user.scema";
+import {User, UserDocument} from "../users/schemas/user.schema";
 import {InjectModel} from "@nestjs/mongoose";
 import {Role, RoleDocument} from "../users/schemas/role.schema";
 import {Model} from "mongoose";
@@ -92,7 +92,7 @@ export class AuthService {
         },
         'at_secret',
         {
-          expiresIn: '1m',
+          expiresIn: '1h',
         }
     );
   }

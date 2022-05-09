@@ -2,7 +2,7 @@ import { Command } from 'nestjs-command';
 import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from "@nestjs/mongoose";
-import { User, UserDocument } from "../schemas/user.scema";
+import { User, UserDocument } from "../schemas/user.schema";
 import { Role as RoleEnum } from "../enums/role.enum";
 import { Role, RoleDocument } from "../schemas/role.schema";
 

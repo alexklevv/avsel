@@ -1,4 +1,4 @@
-import { User } from "../schemas/user.scema";
+import { User } from "../schemas/user.schema";
 
 export interface UserResponseInterface {
   user: User;
